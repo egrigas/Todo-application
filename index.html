@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo-app</title>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <h1>To-Do application</h1>
+        <form id="todoForm">
+          <input
+            id="description"
+            type="text"
+            placeholder="Task description"
+            maxlength="160"
+            required
+          />
+          <input id="deadline" type="datetime-local" />
+          <button type="submit">Add</button>
+          <select id="sortOrder">
+            <option value="recentlyAdded">Recently Added</option>
+            <option value="deadline">Deadline</option>
+            <option value="recentlyCompleted">Recently Completed</option>
+          </select>
+        </form>
+      </section>
+      <section id="todoList"></section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
